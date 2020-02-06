@@ -9,5 +9,8 @@ use \yii\web\Controller;
  * @author 20150519
  */
 class AppController extends Controller {
-    //put your code here
+    
+    public function debug($arr){
+        echo '<pre>' . print_r($arr, true) . '</pre>';
+    }
 }
